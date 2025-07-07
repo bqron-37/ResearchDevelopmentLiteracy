@@ -22,7 +22,7 @@ nav a {
     color: #333;
 }
 .main-visual img {
-    idth: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
