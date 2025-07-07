@@ -1,11 +1,10 @@
-＜style.css＞
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
-    background-color: #FFF8F4;
+    background-color: #f0dbfb;
 }
 header {
-    background-color: #fff;
+    background-color: #ff7979;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 nav {
@@ -23,7 +22,7 @@ nav a {
     color: #333;
 }
 .main-visual img {
-    idth: 100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }
