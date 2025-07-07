@@ -1,9 +1,51 @@
-@charset "utf-8";
-
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #b0eb63;
+＜style.css＞
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    background-color: #FFF8F4;
 }
-
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+.main-visual img {
+    idth: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+}
+.shop-card {
+    flex: 1 1 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s;
+}
+.shop-card:hover {
+    transform: scale(1.03);
+}
+.shop-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
