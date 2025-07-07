@@ -1,4 +1,4 @@
-const images = ["images/slide1.jpg", "images/slide2.jpg", "images/slide3.jpg"];
+const images = ["images/test_1.jpg", "images/test_2.jpg", "images/test_3.jpg"];
 let current = 0;
 const visual = document.querySelector('.main-visual img');
 setInterval(() => {
