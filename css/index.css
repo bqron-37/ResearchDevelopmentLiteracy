@@ -48,3 +48,86 @@ nav a {
     height: 200px;
     object-fit: cover;
 }
+
+/* css/index.css の末尾などに追加 */
+
+.shop-link {
+  text-decoration: none; /* リンクの下線を消す */
+  color: inherit;      /* 文字色を親要素から引き継ぐ（黒色にする） */
+}
+
+/* --- 詳細ページのスタイル --- */
+
+/* 全体を囲むコンテナ (Flexboxで左右に並べる) */
+.shop-container {
+  display: flex;
+  gap: 30px; /* 左右の間の余白 */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* 中央寄せ */
+}
+
+/* 左側のギャラリー */
+.shop-gallery {
+  flex: 1; /* 幅の比率 */
+}
+
+.main-photo {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 右側の店舗情報 */
+.shop-info {
+  flex: 1; /* 幅の比率 */
+}
+
+.shop-info h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  border-bottom: 2px solid #ff7979; /* 見出しの下線 */
+  padding-bottom: 0.5rem;
+}
+
+.catch-copy {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* 詳細情報のテーブル */
+.info-table {
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.info-table dt {
+  font-weight: bold;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-table dd {
+  margin-left: 0; /* ddのデフォルトの余白をリセット */
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+/* 一覧に戻るリンク */
+.back-link {
+  display: block;
+  text-align: center;
+  margin: 2rem auto;
+  padding: 10px 30px;
+  background-color: #ff7979;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}

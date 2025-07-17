@@ -1,0 +1,180 @@
+/* ベース設定 */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  background-color: white;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: #003366;
+}
+
+.recommend-zigzag {
+  padding: 2rem;
+  background-color: #fefefe;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.recommend-zigzag h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.zigzag-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.zigzag-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.zigzag-image,
+.zigzag-text {
+  flex: 1;
+  min-width: 280px;
+  padding: 1rem;
+}
+
+.zigzag-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.zigzag-text h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.zigzag-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.info {
+  padding: 1.5rem 2rem;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.info-item {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.description {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.description h2 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.map {
+  padding: 2rem;
+  background-color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.map-placeholder {
+  background-color: #ccc;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 300px;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+  .zigzag-item,
+  .zigzag-item.reverse {
+    flex-direction: column;
+  }
+
+  .zigzag-image,
+  .zigzag-text {
+    padding: 0.5rem;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
