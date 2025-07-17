@@ -1,33 +1,81 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>Cafe WONDER - 天白区スイーツ特集</title>
-  <link rel="stylesheet" href="css/index.css">
-  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cafe WONDER - 天白スイーツ特集</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
 <body>
   <header>
+    <div class="logo">天白スイーツ特集</div>
     <nav>
-      <a href="index.html">トップ</a> > <h1>Cafe WONDER</h1>
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="#">お店一覧</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section id="shop-detail">
-      <h2>Cafe WONDER</h2>
-      <img src="images/wonder外観.jpg" alt="Cafe WONDERの外観" style="max-width: 500px;">
-      <p>
-        ここに、お店の詳しい説明を書きます。季節限定のメニューや、お店のこだわり、店内の雰囲気などを紹介しましょう。
-      </p>
+    <section class="hero">
+      <img src="images/wonder外観.jpg" alt="Cafe wonderのメイン画像" />
+      <h1>Cafe wonder</h1>
+    </section>
 
-      <h3>店舗情報</h3>
-      <ul>
-        <li><strong>住所:</strong> 愛知県名古屋市天白区〇〇...</li>
-        <li><strong>電話番号:</strong> 052-XXX-XXXX</li>
-        <li><strong>営業時間:</strong> 11:00 - 18:00</li>
-        <li><strong>定休日:</strong> 水曜日</li>
-      </ul>
-      </section>
+    <section class="recommend-zigzag">
+      <h2>おすすめメニュー</h2>
+
+      <div class="zigzag-item">
+        <div class="zigzag-image">
+          <img src="images/wonder_dish_1.jpg" alt="抹茶のミルクレーププレート" />
+        </div>
+        <div class="zigzag-text">
+          <h3>抹茶のミルクレーププレート</h3>
+          <p>旬のフルーツをふんだんに使った一番人気のメニュー。シロップも自家製です。</p>
+        </div>
+      </div>
+
+      <div class="zigzag-item reverse">
+        <div class="zigzag-image">
+          <img src="images/wonder_dish_2.jpg" alt="濃厚抹茶金時" />
+        </div>
+        <div class="zigzag-text">
+          <h3>濃厚抹茶金時</h3>
+          <p>西尾産の高級抹茶を使用した濃厚なシロップに、北海道産の小豆をトッピング。</p>
+        </div>
+      </div>
+
+      <div class="zigzag-item">
+        <div class="zigzag-image">
+          <img src="images/uminagomi-dish3.jpg" alt="特製ティラミス氷" />
+        </div>
+        <div class="zigzag-text">
+          <h3>特製ティラミス氷</h3>
+          <p>マスカルポーネチーズとほろ苦いコーヒーが絶妙な、大人のためのスイーツかき氷。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="info-item"><strong>住所：</strong>名古屋市天白区〇〇</div>
+      <div class="info-item"><strong>営業時間：</strong>11:00～18:00</div>
+      <div class="info-item"><strong>定休日：</strong>水曜日</div>
+    </section>
+
+    <section class="description">
+      <h2>お店の紹介</h2>
+      <p>
+        季節のフルーツを贅沢に使った、ふわふわ食感のかき氷が人気のお店です。
+        シロップも自家製にこだわっており、ここでしか味わえない一杯を楽しめます。
+      </p>
+    </section>
+
+    <section class="map">
+      <h2>アクセス</h2>
+      <div class="map-placeholder">ここにGoogleマップなどを埋め込めます</div>
+    </section>
   </main>
 
 </body>
