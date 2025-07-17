@@ -31,9 +31,29 @@ nav a {
 }
 .main-visual img {
     width: 100%;
-    height: auto;
+    height: 1000px;
     object-fit: cover;
+    object-position: center;
 }
+.main-visual img.sweets1 {
+    object-position: center top; /* 上側を見せる */
+}
+.main-visual img.sweets2 {
+    object-position: 70% 30%;   /* 任意の位置 */
+}
+.main-visual img.sweets3 {
+    object-position: center bottom; /* 下側を見せる */
+}
+.main-visual img.sweets4 {
+    object-position: 30% 70%;   /* 任意の位置 */
+}
+.main-visual img.sweets5 {
+    object-position: 50% 50%;   /* 中央を見せる */
+}
+.main-visual img.sweets6 {
+    object-position: 70% 30%;   /* 任意の位置 */
+}
+
 .shop-list {
     display: flex;
     flex-wrap: wrap;
