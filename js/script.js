@@ -1,28 +1,38 @@
 const images = [
   {
     src: "images/uminagomi_dish1.jpg",
-    class: "sweets1",
+    class: "uminagomi_pict",
     caption: '<a href="uminagomi.html" style="color:#fff;">かき氷専門店ウミナゴミ</a>'
   },
   {
     src: "images/uminagomi_dish3.jpg",
-    class: "sweets3",
+    class: "uminagomi_pict",
     caption: '<a href="uminagomi.html" style="color:#fff;">かき氷専門店ウミナゴミ</a>'
   },
   {
     src: "images/wonder_dish_1.jpg",
-    class: "sweets4",
+    class: "wonder_pict",
     caption: '<a href="wonder.html" style="color:#fff;">Cafe WONDER</a>'
   },
   {
     src: "images/wonder_dish_2.jpg",
-    class: "sweets5",
+    class: "wonder_pict",
     caption: '<a href="wonder.html" style="color:#fff;">Cafe WONDER</a>'
   },
   {
     src: "images/wonder_dish_3.jpg",
-    class: "sweets6",
+    class: "wonder_pict",
     caption: '<a href="wonder.html" style="color:#fff;">Cafe WONDER</a>'
+  },
+  {
+    src: "images/motitsuki_dish_1.jpg",
+    class: "motitsuki_pict",
+    caption: '<a href="motituki.html" style="color:#fff;">茶房 もちつき庵</a>'
+  },
+  {
+    src: "images/motitsuki_dish_2.jpg",
+    class: "motitsuki_pict",
+    caption: '<a href="motituki.html" style="color:#fff;">茶房 もちつき庵</a>'
   }
 ];
 let current = 0;
