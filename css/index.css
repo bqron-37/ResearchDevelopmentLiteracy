@@ -31,7 +31,10 @@ nav a {
 }
 
 .main-visual {
-    position: relative;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .main-visual-caption {
     position: absolute;
@@ -52,6 +55,7 @@ nav a {
     height: 600px;
     object-fit: cover;
     object-position: center;
+    display: block;
 }
 .main-visual img.sweets1 {
     object-position: top;
@@ -67,6 +71,36 @@ nav a {
 }
 .main-visual img.sweets6 {
     object-position: 50% 25%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;         /* 完全透明 */
+  color: rgba(255,255,255,0.7);    /* 白色・やや透明 */
+  border: none;
+  font-size: 3rem;                 /* 少し大きめに */
+  padding: 0.3em 0.6em;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.arrow:hover {
+  color: #fff;                     /* ホバー時は真っ白 */
+  background: rgba(0,0,0,0.1);     /* ホバー時のみ少し背景 */
+}
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
+
+.main-visual img {
+  width: 100%;     
+  height: 600px;       /* 必要に応じて調整 */
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: opacity 1.2s; /* ゆっくりフェード */
 }
 
 .shop-list {
