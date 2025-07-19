@@ -70,10 +70,16 @@ nav a {
 }
 
 .shop-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  grid-template-rows: repeat(2, 1fr);    /* 2行 */
+  gap: 30px;                             /* カード間の余白 */
+  justify-items: center;                 /* カードを列方向中央揃え */
+  align-items: center;                   /* カードを行方向中央揃え */
+  width: 100%;
+  max-width: 800px;                      /* 必要に応じて調整 */
+  margin: 0 auto;                        /* 全体を中央揃え */
+  padding: 2rem 0;
 }
 
 /* css/index.css の末尾などに追加 */
