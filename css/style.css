@@ -271,7 +271,7 @@ footer {
 }
 
 /* スマホ対応 */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .zigzag-item,
   .zigzag-item.reverse {
     flex-direction: column;
