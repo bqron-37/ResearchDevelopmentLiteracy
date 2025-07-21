@@ -203,6 +203,123 @@ footer {
   letter-spacing: 1px;
 }
 
+/* 右下フローティングメニュー（デバッグ用：デスクトップでも表示） */
+.floating-menu {
+  display: block;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2000;
+}
+.floating-btn {
+  background: #003366;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.floating-btn span {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+.floating-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 12px 0;
+  min-width: 160px;
+}
+.floating-list a {
+  display: block;
+  padding: 10px 24px;
+  color: #003366;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.floating-list a:hover {
+  background: #f0f4ff;
+}
+.floating-menu.open .floating-list {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .floating-menu {
+    display: block;
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 2000;
+  }
+  .floating-btn {
+    background: #003366;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .floating-btn span {
+    display: block;
+    width: 32px;
+    height: 4px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+  }
+  .floating-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    padding: 12px 0;
+    min-width: 160px;
+  }
+  .floating-list a {
+    display: block;
+    padding: 10px 24px;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .floating-list a:hover {
+    background: #f0f4ff;
+  }
+  .floating-menu.open .floating-list {
+    display: flex;
+  }
+  /* ヘッダーのnavはスマホでは非表示に */
+  header nav {
+    display: none;
+  }
+}
+
 /* スマホ対応 */
 @media (max-width: 768px) {
   .zigzag-item,
@@ -221,6 +338,18 @@ footer {
   }
 
   nav ul {
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  nav ul li {
+    flex: 1 1 120px;      /* 幅を揃える（例: 最小120px） */
+    text-align: center;   /* テキスト中央揃え */
+    min-width: 100px;     /* 必要に応じて調整 */
+  }
+  nav a {
+    display: block;       /* ボタン全体をクリック可能に */
+    width: 100%;
   }
 }
