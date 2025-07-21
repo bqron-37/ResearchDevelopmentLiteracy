@@ -257,9 +257,6 @@ footer {
     text-decoration: none;
     font-weight: bold;
     transition: background 0.2s;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
   .floating-list a:hover {
     background: #f0f4ff;
