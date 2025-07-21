@@ -238,3 +238,15 @@ p {
 .back-link:hover {
   opacity: 0.8;
 }
+
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+.footer-content {
+  letter-spacing: 1px;
+}
