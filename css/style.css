@@ -191,6 +191,18 @@ footer {
   margin-top: 2rem;
 }
 
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+.footer-content {
+  letter-spacing: 1px;
+}
+
 /* スマホ対応 */
 @media (max-width: 768px) {
   .zigzag-item,

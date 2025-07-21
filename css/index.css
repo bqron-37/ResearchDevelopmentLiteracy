@@ -34,11 +34,27 @@ nav a {
     color: #333;
 }
 
+h2 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: #003366;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+}
+
 .main-visual {
   position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  width: 100vw;       /* 画面幅いっぱいに */
+  max-width: 100vw;   /* 最大幅も画面幅に */
+  margin: 0;          /* 余白なし */
+  left: 50%;
+  transform: translateX(-50%); /* 横スクロール防止（必要なら） */
+  overflow: hidden;
 }
 .main-visual-caption {
     position: absolute;
@@ -55,11 +71,11 @@ nav a {
     pointer-events: auto;
 }
 .main-visual img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+  width: 100vw;       /* 画像も画面幅いっぱいに */
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 .main-visual img.sweets1 {
     object-position: top;
@@ -120,14 +136,10 @@ nav a {
   padding: 2rem 0;
 }
 
-/* css/index.css の末尾などに追加 */
-
 .shop-link {
   text-decoration: none; /* リンクの下線を消す */
   color: inherit;      /* 文字色を親要素から引き継ぐ（黒色にする） */
 }
-
-/* --- 詳細ページのスタイル --- */
 
 /* 全体を囲むコンテナ (Flexboxで左右に並べる) */
 .shop-container {
@@ -229,4 +241,16 @@ nav a {
 
 .back-link:hover {
   opacity: 0.8;
+}
+
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 1rem;
+}
+.footer-content {
+  letter-spacing: 1px;
 }
