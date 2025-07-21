@@ -4,34 +4,60 @@ body {
   margin: 0;
   background-color: #f9f9f9;
   color: #333;
+  padding-top: 56px; /* ヘッダーの高さ分だけ余白を追加（例: 56px） */
 }
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #003366;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0.5rem 0; /* index.htmlと同じ縦幅 */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between; /* 左右に配置 */
 }
 
 header .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 2rem; /* 左端に余白 */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem; /* index.htmlと同じ余白 */
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem; /* ボタン間のスペースを広げる（例: 2rem） */
   margin: 0;
   padding: 0;
+  margin-right: 2rem;
+  justify-content: flex-end;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem 1rem; /* ボタン風に余白を追加 */
+  border-radius: 24px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #0055aa; /* ホバー時に色を付けてわかりやすく */
 }
 
 .hero {

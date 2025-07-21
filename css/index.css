@@ -2,14 +2,18 @@ body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     background-color: #f9f9f9;
+    padding-top: 80px; /* ヘッダーの高さ分調整（例: 80px） */
 }
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #003366;
   color: white;
-  padding: 1rem rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 header .logo {
   font-size: 1.5rem;
