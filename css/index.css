@@ -30,6 +30,19 @@ nav a {
     color: #333;
 }
 
+h2 {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: #003366;
+}
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+  text-align: center;
+}
+
 .main-visual {
   position: relative;
   width: 100vw;       /* 画面幅いっぱいに */
